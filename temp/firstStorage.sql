@@ -1,0 +1,2 @@
+CREATE DATABASE SEC_basic;
+USE SEC_basic;
