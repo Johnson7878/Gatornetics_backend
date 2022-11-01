@@ -136,3 +136,8 @@ plt.xlabel('Weeks',size=15)
 plt.ylabel('Total Yards',size=15)
 plt.title('Total Passing Yards for AR15')
 plt.show()
+
+#and thats the first example of our ML application done!!! As you can see,
+#we have created a linear regression line of fit for our data on AR15. This line of
+#fit will allow us to measure prediction points for how his passing game COULD improve 
+#over the last couple of games/weeks.
