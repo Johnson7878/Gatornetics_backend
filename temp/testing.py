@@ -26,6 +26,20 @@ try:
 except ApiException as e:
     print("Exception when calling TeamsApi->get_teams: %s\n" % e)
 
+############################################################################################
+'''
+
+Before anything, I have a one question:
+
+1) Can we store the actual object that holds all attributes (id, school, conference, etc.)? (Code is implemented for this already as an example, and code beyond line 140 can be adjusted
+accordingly)
+
+'''
+############################################################################################
+
+# Cole's Code
+
+'''
 teams = []
 i = 0
 for _ in SEC_Conf:
@@ -37,14 +51,38 @@ for _ in SEC_Conf:
     temp.append(SEC_Conf[i].logos)
     teams.append(temp)
     i += 1
+'''
 
+# Emmanuel's Code (without objects)
+
+'''
+teams = dict()
+for team in SEC_Conf:
+    teams[team.id] = [team.school, team.conference, team.color, team.logos]
+'''
+
+# Emmanuel's Code (with objects)
+
+'''
+teams = dict()
+for team in SEC_Conf:
+    teams[team.id] = team
+'''
+
+############################################################################################
 
 #now lets get player information
 api_instance = cfbd.TeamsApi(cfbd.ApiClient(configuration))
 #team = 'Florida' # str | Team name (optional)
 year = 2022 # int | Season year (optional)
-SEC_rosters = []
+
+############################################################################################
+
+# Cole's Code
+
+'''
 try:
+    SEC_rosters = []
     i=0
     # Team rosters
     for _ in teams:
@@ -67,12 +105,39 @@ try:
         i+=1
 except ApiException as e:
     print("Exception when calling TeamsApi->get_roster: %s\n" % e)
+'''
 
+# Emmanuel's Code (without objects)
 
+'''
+try:
+    players = dict()
+    team_ids = teams.keys()
+    for id in team_ids:
+        roster = api_instance.get_roster(team=id, year=year)
+        for player in roster:
+            players[player.id] = [player.first_name, player.last_name, player.team, player.year, player.position, player.jersey, player.height, player.weight, player.home_city, player.home_state]
+except ApiException as e:
+    print("Exception when calling TeamsApi->get_roster: %s\n" % e)
+'''
 
+# Emmanuel's Code (with objects)
+
+'''
+try:
+    players = dict()
+    team_ids = teams.keys()
+    for id in team_ids:
+        roster = api_instance.get_roster(team=id, year=year)
+        for player in roster:
+            players[player.id] = player
+except ApiException as e:
+    print("Exception when calling TeamsApi->get_roster: %s\n" % e)
+'''
+
+############################################################################################
 
 #now we'll print out to csv so that we can import to SQL and then host database.
-
 
 header1 = ['id', 'school', 'conference', 'color', 'logos']
 with open('teamInfo.csv', 'w', encoding='UTF8', newline='') as f:
@@ -88,7 +153,7 @@ with open('playerInfo.csv','w', encoding='UTF8', newline='') as f1:
     writer2.writerows(SEC_rosters)
 
 
-#now lets create a ML starter that will shwocase a common example
+#now lets create a ML starter that will showcase a common example
 #Here, we'll load in a players season stats (Anthony Richardson, UF) and plot them on a graph
 #Then, we'll take the player's data and put it into a matrix (pre-process) and send it through Linear regression model
 #from ScikitLearn.
