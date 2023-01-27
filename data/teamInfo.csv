@@ -1,0 +1,15 @@
+id,school,conference,color,logos,division,wins,expecWins,recRank,talentScore,losses,overOff,overDeff
+333,Alabama,SEC,#690014,"['http://a.espncdn.com/i/teamlogos/ncaa/500/333.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/333.png']",West,9,8.5,2,1016.79,2,0.276,-0.007
+8,Arkansas,SEC,#9c1831,"['http://a.espncdn.com/i/teamlogos/ncaa/500/8.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/8.png']",West,6,7.5,28,741.06,5,0.225,0.248
+2,Auburn,SEC,#03244d,"['http://a.espncdn.com/i/teamlogos/ncaa/500/2.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/2.png']",West,5,6.7,21,783.87,6,0.168,0.149
+57,Florida,SEC,#0021A5,"['http://a.espncdn.com/i/teamlogos/ncaa/500/57.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/57.png']",East,6,6,17,856.95,5,0.292,0.21
+61,Georgia,SEC,#CC0000,"['http://a.espncdn.com/i/teamlogos/ncaa/500/61.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/61.png']",East,11,10.7,3,989.76,0,0.363,-0.02
+96,Kentucky,SEC,#005DAA,"['http://a.espncdn.com/i/teamlogos/ncaa/500/96.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/96.png']",East,6,6.2,14,737.33,5,0.147,0.089
+99,LSU,SEC,#fdd023,"['http://a.espncdn.com/i/teamlogos/ncaa/500/99.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/99.png']",West,9,7.9,12,872.61,2,0.297,0.113
+344,Mississippi State,SEC,#762123,"['http://a.espncdn.com/i/teamlogos/ncaa/500/344.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/344.png']",West,8,6.1,27,725.55,4,0.179,0.083
+142,Missouri,SEC,#000000,"['http://a.espncdn.com/i/teamlogos/ncaa/500/142.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/142.png']",East,5,4.4,15,715.36,6,0.148,0.151
+145,Ole Miss,SEC,#001148,"['http://a.espncdn.com/i/teamlogos/ncaa/500/145.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/145.png']",West,8,8.3,23,757.39,4,0.27,0.143
+2579,South Carolina,SEC,#670010,"['http://a.espncdn.com/i/teamlogos/ncaa/500/2579.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/2579.png']",East,7,6.5,25,762.63,4,0.246,0.198
+2633,Tennessee,SEC,#EE9627,"['http://a.espncdn.com/i/teamlogos/ncaa/500/2633.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/2633.png']",East,9,7.8,18,764.8,2,0.388,0.204
+245,Texas A&M,SEC,#5C0025,"['http://a.espncdn.com/i/teamlogos/ncaa/500/245.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/245.png']",West,4,3.7,1,947.3,7,0.133,0.112
+238,Vanderbilt,SEC,#000000,"['http://a.espncdn.com/i/teamlogos/ncaa/500/238.png', 'http://a.espncdn.com/i/teamlogos/ncaa/500-dark/238.png']",East,5,4.8,32,629.76,6,0.18,0.287
